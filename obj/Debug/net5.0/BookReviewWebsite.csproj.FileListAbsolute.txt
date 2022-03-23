@@ -1,0 +1,16 @@
+C:\Users\k.patel61\Desktop\BookReviewWebsite\bin\Debug\net5.0\BookReviewWebsite.exe
+C:\Users\k.patel61\Desktop\BookReviewWebsite\bin\Debug\net5.0\BookReviewWebsite.deps.json
+C:\Users\k.patel61\Desktop\BookReviewWebsite\bin\Debug\net5.0\BookReviewWebsite.runtimeconfig.json
+C:\Users\k.patel61\Desktop\BookReviewWebsite\bin\Debug\net5.0\BookReviewWebsite.runtimeconfig.dev.json
+C:\Users\k.patel61\Desktop\BookReviewWebsite\bin\Debug\net5.0\BookReviewWebsite.dll
+C:\Users\k.patel61\Desktop\BookReviewWebsite\bin\Debug\net5.0\ref\BookReviewWebsite.dll
+C:\Users\k.patel61\Desktop\BookReviewWebsite\bin\Debug\net5.0\BookReviewWebsite.pdb
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.csproj.AssemblyReference.cache
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.AssemblyInfoInputs.cache
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.AssemblyInfo.cs
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.csproj.CoreCompileInputs.cache
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.dll
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\ref\BookReviewWebsite.dll
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.pdb
+C:\Users\k.patel61\Desktop\BookReviewWebsite\obj\Debug\net5.0\BookReviewWebsite.genruntimeconfig.cache

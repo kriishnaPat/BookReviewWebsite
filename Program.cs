@@ -7,6 +7,7 @@ namespace BookReviewWebsite
         static void Main(string[] args)
         {
             usercheck();
+            var books = new List<string>() {};
             while (true){
                 //diplays menu options
                 Console.WriteLine(@"
@@ -22,6 +23,12 @@ namespace BookReviewWebsite
                 int user_choice = Convert.ToInt32(Console.ReadLine());
                 if (user_choice == 1)
                 {
+                    Console.WriteLine("Enter book name: ");
+                    string bookname = Console.ReadLine();
+                    Console.WriteLine("Enter book author: ");
+                    string author = Console.ReadLine();
+                    books.push(new Book(bookname, author));
+                    Console.Write(books);
                 } 
                 else if (user_choice == 2)
                 {
@@ -58,7 +65,27 @@ namespace BookReviewWebsite
             }
             return 1;
         }
-
-}
+        }
+    class Book{
+        private string name;
+        private string author;
+        private string description;
+        public int rating;
+        public int pageNum;
+        private Boolean progress;
+        public Book(string name, string author){
+            this.name = name;
+            this.author = author;
+            this.progress = false;
+        }
+        public void finishBook(string description, int rating){
+            this.progress = true;
+            this.description = description;
+            this.rating = rating;
+        }
+        public void bookmark(int pageNum){
+            this.pageNum = pageNum;
+        }
+    }
 }
 }

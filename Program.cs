@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;  
 
 namespace BookReviewWebsite
 {
@@ -7,7 +8,7 @@ namespace BookReviewWebsite
         static void Main(string[] args)
         {
             usercheck();
-            var books = new List<string>() {};
+            List<string> books = new List<string>();
             while (true){
                 //diplays menu options
                 Console.WriteLine(@"
@@ -27,7 +28,7 @@ namespace BookReviewWebsite
                     string bookname = Console.ReadLine();
                     Console.WriteLine("Enter book author: ");
                     string author = Console.ReadLine();
-                    books.push(new Book(bookname, author));
+                    books.Add(new Book {name = "JOhn", author = "Smith"});
                     Console.Write(books);
                 } 
                 else if (user_choice == 2)
@@ -67,9 +68,9 @@ namespace BookReviewWebsite
         }
         }
     class Book{
-        private string name;
-        private string author;
-        private string description;
+        public string name;
+        public string author;
+        public string description;
         public int rating;
         public int pageNum;
         private Boolean progress;

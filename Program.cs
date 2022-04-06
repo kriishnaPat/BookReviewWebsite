@@ -28,7 +28,8 @@ namespace BookReviewWebsite
                     string bookname = Console.ReadLine();
                     Console.WriteLine("Enter book author: ");
                     string author = Console.ReadLine();
-                    books.Add(new Book {name = "JOhn", author = "Smith"});
+                    Book booker = new Book("yes,", "yes");
+                    books.Add(booker.name);
                     Console.Write(books);
                 } 
                 else if (user_choice == 2)

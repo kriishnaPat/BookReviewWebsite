@@ -57,6 +57,7 @@ namespace BookReviewWebsite
                     Console.WriteLine("Enter a description for the book: ");
                     string description = Console.ReadLine();
                     books.Insert(index, rating);
+                    books.Insert(index, description);
                     foreach(var month in books)
                     {
                         Console.Write(month);
@@ -65,9 +66,30 @@ namespace BookReviewWebsite
                 }
                 else if (user_choice == 4)
                 {
+                    Console.WriteLine("Enter name of the book you would like to remove: ");
+                    string removeBook = Console.ReadLine();
+                    for (int i = 0; i < books.Count; i++)
+                    {
+                        if (books[i].Contains(removeBook)){
+                            index = books.IndexOf(removeBook);
+                            Console.Write(index);
+                    } 
+                    }
+                    books.RemoveAt(index);
+               
                 }
                 else if (user_choice == 5)
                 {
+                    Console.WriteLine("Enter name of the book you would like to view the review of: ");
+                    string findBook = Console.ReadLine();
+                    for (int i = 0; i < books.Count; i++)
+                    {
+                        if (books[i].Contains(findBook)){
+                            index = books.IndexOf(findBook);
+                            Console.Write(index);
+                        }
+                }
+                Console.WriteLine(books[index]);
                 }
                 else if (user_choice == 6)
                 {
@@ -91,6 +113,7 @@ namespace BookReviewWebsite
             return 1;
         }
         }
+        }
     class Book{
         public string name;
         public string author;
@@ -105,4 +128,4 @@ namespace BookReviewWebsite
         }
     }
 }
-}
+

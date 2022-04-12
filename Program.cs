@@ -8,9 +8,9 @@ namespace BookReviewWebsite
         public static int index;
         static void Main(string[] args)
         {
-            usercheck();
-            List<string> books = new List<string>();
             
+            List<string> books = new List<string>();
+            usercheck();
             while (true){
                 //diplays menu options
                 Console.WriteLine(@"
@@ -100,25 +100,27 @@ namespace BookReviewWebsite
                     Console.Write("That was not a valid choice!");
                 }
         }
-        static int usercheck(){
-            Console.WriteLine("Enter Username: ");
-            string username = Console.ReadLine();
-            Console.WriteLine("Enter Password: ");
-            string password = Console.ReadLine();
-            if(username == "bookreader" && password == "123456789"){
-                Console.Write("Welcome bookreader to the book review website!");
-            }else{
-                    Console.WriteLine("Either your username or password is incorrect please try again.");
-                }
-            return 1;
+        static void usercheck(){
+            bool correct = false;
+            while (!correct){
+                Console.WriteLine("Enter Username: ");
+                string username = Console.ReadLine();
+                Console.WriteLine("Enter Password: ");
+                string password = Console.ReadLine();
+                    if(username == "bookreader" && password == "123456789"){
+                        Console.Write("Welcome bookreader to the book review website!");
+                        correct = true;
+                        break;
+                    }else{
+                            Console.WriteLine("Either your username or password is incorrect please try again.");
+                        }
+            }
         }
         }
         }
     class Book{
         public string name;
         public string author;
-        public string description;
-        public int rating;
         public Book(string name, string author){
             this.name = name;
             this.author = author;

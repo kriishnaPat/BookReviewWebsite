@@ -10,7 +10,7 @@ namespace BookReviewWebsite
         {
             
             List<string> books = new List<string>();
-            usercheck();
+            //usercheck();
             while (true){
                 //diplays menu options
                 Console.WriteLine(@"
@@ -33,10 +33,7 @@ namespace BookReviewWebsite
                     Book newbook = new Book(bookname, author);
                     List<string> fullInfo = new List<string>{newbook.name, newbook.author};
                     books.AddRange(fullInfo);
-                    foreach(var month in books)
-                    {
-                        Console.Write(month);
-                    }
+                    Display(books);
                 } 
                 else if (user_choice == 2)
                 {
@@ -116,6 +113,31 @@ namespace BookReviewWebsite
                         }
             }
         }
+        static void Display(List<string> list)
+    {
+        // Part 2: loop over and display everything in the List.
+        Console.WriteLine("Elements:");
+        foreach (var sublist in list)
+        {
+            foreach (var value in sublist)
+            {
+                Console.Write(value);
+                Console.Write(' ');
+            }
+            Console.WriteLine();
+        }
+        // Part 3: display element.
+        Console.WriteLine("Element at 1, 0:");
+        Console.WriteLine(list[1][0]);
+        // Part 4: display total count.
+        int count = 0;
+        foreach (var sublist in list)
+        {
+            count += sublist.Count;
+        }
+        Console.WriteLine("Count:");
+        Console.WriteLine(count);
+    }
         }
         }
     class Book{
